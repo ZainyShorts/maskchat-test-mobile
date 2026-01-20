@@ -123,99 +123,140 @@ export const AudioPlayer = ({ src }: { src: string }) => {
   }, [])
 
   // Initialize audio with mobile compatibility
-  useEffect(() => {
-    if (!src) {
-      setError("No audio source provided")
-      return
-    }
+  // useEffect(() => {
+  //   if (!src) {
+  //     setError("No audio source provided")
+  //     return
+  //   }
 
-    const audio = new Audio()
-    audioRef.current = audio
-    audio.src = src
+  //   const audio = new Audio()
+  //   audioRef.current = audio
+  //   audio.src = src
     
-    // iOS requires this for autoplay to work later
-    audio.preload = "metadata"
-    audio.volume = volume
+  //   // iOS requires this for autoplay to work later
+  //   audio.preload = "metadata"
+  //   audio.volume = volume
 
-    const handleLoadedData = () => {
-      setDuration(audio.duration || 0)
-      setIsLoading(false)
-    }
+  //   const handleLoadedData = () => {
+  //     setDuration(audio.duration || 0)
+  //     setIsLoading(false)
+  //   }
 
-    const handleTimeUpdate = () => {
-      setCurrentTime(audio.currentTime)
-    }
+  //   const handleTimeUpdate = () => {
+  //     setCurrentTime(audio.currentTime)
+  //   }
 
-    const handleEnded = () => {
-      setIsPlaying(false)
-      setCurrentTime(0)
-      // Reset playback for iOS
-      if (isMobile) {
-        audio.currentTime = 0
-      }
-    }
+  //   const handleEnded = () => {
+  //     setIsPlaying(false)
+  //     setCurrentTime(0)
+  //     // Reset playback for iOS
+  //     if (isMobile) {
+  //       audio.currentTime = 0
+  //     }
+  //   }
 
-    const handleError = (e: any) => {
-      console.error("Audio error:", e)
-      setIsLoading(false)
+  //   const handleError = (e: any) => {
+  //     console.error("Audio error:", e)
+  //     setIsLoading(false)
       
-      // Handle specific errors
-      if (audio.error) {
-        switch(audio.error.code) {
-          case audio.error.MEDIA_ERR_ABORTED:
-            setError("Audio playback was aborted")
-            break
-          case audio.error.MEDIA_ERR_NETWORK:
-            setError("Network error loading audio")
-            break
-          case audio.error.MEDIA_ERR_DECODE:
-            setError("Audio format not supported")
-            break
-          case audio.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-            setError("Audio format not supported on this device")
-            break
-          default:
-            setError("Failed to load audio")
-        }
-      }
-    }
+  //     // Handle specific errors
+  //     if (audio.error) {
+  //       switch(audio.error.code) {
+  //         case audio.error.MEDIA_ERR_ABORTED:
+  //           setError("Audio playback was aborted")
+  //           break
+  //         case audio.error.MEDIA_ERR_NETWORK:
+  //           setError("Network error loading audio")
+  //           break
+  //         case audio.error.MEDIA_ERR_DECODE:
+  //           setError("Audio format not supported")
+  //           break
+  //         case audio.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+  //           setError("Audio format not supported on this device")
+  //           break
+  //         default:
+  //           setError("Failed to load audio")
+  //       }
+  //     }
+  //   }
 
-    const handleCanPlay = () => {
-      setIsLoading(false)
-    }
+  //   const handleCanPlay = () => {
+  //     setIsLoading(false)
+  //   }
 
-    // For iOS, we need to detect when audio is ready
-    const handleLoadedMetadata = () => {
-      setDuration(audio.duration)
-    }
+  //   // For iOS, we need to detect when audio is ready
+  //   const handleLoadedMetadata = () => {
+  //     setDuration(audio.duration)
+  //   }
 
-    audio.addEventListener('loadeddata', handleLoadedData)
-    audio.addEventListener('timeupdate', handleTimeUpdate)
-    audio.addEventListener('ended', handleEnded)
-    audio.addEventListener('error', handleError)
-    audio.addEventListener('canplay', handleCanPlay)
-    audio.addEventListener('loadedmetadata', handleLoadedMetadata)
+  //   audio.addEventListener('loadeddata', handleLoadedData)
+  //   audio.addEventListener('timeupdate', handleTimeUpdate)
+  //   audio.addEventListener('ended', handleEnded)
+  //   audio.addEventListener('error', handleError)
+  //   audio.addEventListener('canplay', handleCanPlay)
+  //   audio.addEventListener('loadedmetadata', handleLoadedMetadata)
 
-    // iOS specific: preload metadata and allow inline playback
-    if (isMobile) {
-      audio.setAttribute('playsinline', '')
-      audio.setAttribute('webkit-playsinline', '')
-    }
+  //   // iOS specific: preload metadata and allow inline playback
+  //   if (isMobile) {
+  //     audio.setAttribute('playsinline', '')
+  //     audio.setAttribute('webkit-playsinline', '')
+  //   }
 
-    return () => {
-      audio.removeEventListener('loadeddata', handleLoadedData)
-      audio.removeEventListener('timeupdate', handleTimeUpdate)
-      audio.removeEventListener('ended', handleEnded)
-      audio.removeEventListener('error', handleError)
-      audio.removeEventListener('canplay', handleCanPlay)
-      audio.removeEventListener('loadedmetadata', handleLoadedMetadata)
+  //   return () => {
+  //     audio.removeEventListener('loadeddata', handleLoadedData)
+  //     audio.removeEventListener('timeupdate', handleTimeUpdate)
+  //     audio.removeEventListener('ended', handleEnded)
+  //     audio.removeEventListener('error', handleError)
+  //     audio.removeEventListener('canplay', handleCanPlay)
+  //     audio.removeEventListener('loadedmetadata', handleLoadedMetadata)
       
-      if (audioRef.current) {
-        audioRef.current.pause()
-        audioRef.current = null
-      }
-    }
-  }, [src, isMobile, volume])
+  //     if (audioRef.current) {
+  //       audioRef.current.pause()
+  //       audioRef.current = null
+  //     }
+  //   }
+  // }, [src, isMobile, volume])
+
+  useEffect(() => {
+  if (!src) {
+    setError("No audio source provided")
+    return
+  }
+
+  const audio = audioRef.current
+  if (!audio) return
+
+  audio.src = src
+  audio.preload = "metadata"
+  audio.volume = volume
+
+  const handleLoadedData = () => {
+    setDuration(audio.duration || 0)
+    setIsLoading(false)
+  }
+
+  const handleTimeUpdate = () => {
+    setCurrentTime(audio.currentTime)
+  }
+
+  const handleEnded = () => {
+    setIsPlaying(false)
+    setCurrentTime(0)
+    if (isMobile) audio.currentTime = 0
+  }
+
+  audio.addEventListener("loadeddata", handleLoadedData)
+  audio.addEventListener("timeupdate", handleTimeUpdate)
+  audio.addEventListener("ended", handleEnded)
+
+  return () => {
+    audio.removeEventListener("loadeddata", handleLoadedData)
+    audio.removeEventListener("timeupdate", handleTimeUpdate)
+    audio.removeEventListener("ended", handleEnded)
+    audio.pause()
+  }
+}, [src, isMobile, volume])
+
 
   const handlePlayPause = async () => {
     if (!audioRef.current || isLoading) return
