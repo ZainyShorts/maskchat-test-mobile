@@ -1,0 +1,45 @@
+name: Deploy Kosmos App to VPS
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to VPS (Clone or Pull + Build + Restart PM2)
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATEKEY }}
+          script: |
+            echo "🔁 Starting deploy process..."
+
+            git config --global --add safe.directory /home/themaskchat.com/kosmos/FE
+
+            if [ ! -d "/home/themaskchat.com/kosmos/FE/.git" ]; then
+              echo "📁 Cloning repository for the first time..."
+              rm -rf /home/themaskchat.com/kosmos/FE
+              git clone --branch production git@github.com:Adroit-Tech/MaskChat_Kosmos_Dashboard.git /home/themaskchat.com/kosmos/FE
+            else
+              echo "📥 Pulling latest changes..."
+              cd /home/themaskchat.com/kosmos/FE
+              git remote set-url origin git@github.com:Adroit-Tech/MaskChat_Kosmos_Dashboard.git
+              git pull origin production
+            fi
+
+            echo "📦 Installing dependencies...."
+            cd /home/themaskchat.com/kosmos/FE
+            npm install
+
+            echo "⚙️ Building app..."
+            npm run build
+
+            echo "🚀 Restarting app with PM2..."
+            pm2 delete kosmos-app-dashboard-production || true
+            pm2 start npm --name kosmos-app-dashboard-production -- start -- -p 3000
+            pm2 save

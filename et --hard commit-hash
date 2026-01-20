@@ -1,0 +1,279 @@
+[33mcommit 17ff43ef674ef0e8118bb4b7313e78b38ef55bd4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mproduction[m[33m, [m[1;31morigin/production[m[33m)[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 17 21:44:44 2025 +0500
+
+    chatbot ui
+
+[33mcommit a377ae06a766a67e3fae71232233ac55a2303f25[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 17 20:34:29 2025 +0500
+
+    chatbot ui
+
+[33mcommit a5606e7b9aa1ed6899e4d9e3225312913c0ee42d[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 17 15:55:52 2025 +0500
+
+    chatbot ui
+
+[33mcommit fc03daaf1af3417a505e32decc74315aadf2929e[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 17 15:49:31 2025 +0500
+
+    chatbot ui
+
+[33mcommit 43516a89e22f4d36f3bcac4832de0c4b07fe9b9d[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 17 15:43:33 2025 +0500
+
+    chatbot ui
+
+[33mcommit 9f39827a44d6c6efe96677aac1da2972ce8ca572[m
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Mon Sep 15 23:44:07 2025 +0500
+
+    Update vars.ts
+
+[33mcommit 2f6ec05dc05971f60925d5c934b6c250a0b17cf8[m
+Merge: 32db19c e251c49
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Mon Sep 15 23:38:02 2025 +0500
+
+    Merge pull request #12 from Adroit-Tech/improving-system
+    
+    Improving system
+
+[33mcommit e251c49aeeff7142dfeec5a96ef643f6a36bd68d[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Mon Sep 15 23:37:02 2025 +0500
+
+    improving-system
+
+[33mcommit 32db19c4b394260e34d317770c21c6015ac550c3[m
+Merge: 99bc8f2 04afee1
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Mon Sep 15 23:35:28 2025 +0500
+
+    Merge pull request #11 from Adroit-Tech/improving-system
+    
+    Improving system
+
+[33mcommit 04afee10d9a49b8ce14639cd9c1b1b3734765ec8[m
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Mon Sep 15 23:33:47 2025 +0500
+
+    Update vars.ts
+
+[33mcommit bc41f6a1eb53e6f589887bb1209254c99754603e[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Mon Sep 15 23:32:15 2025 +0500
+
+    improving-system
+
+[33mcommit 404e48c86e63f08819931df02498a7ffaee24029[m[33m ([m[1;32mimproving-system[m[33m)[m
+Merge: 7b1a3ea b0b92c4
+Author: Faizy426890 <faizanlahori2003@gmail.com>
+Date:   Sat Sep 13 21:16:25 2025 -0500
+
+     changes
+
+[33mcommit 7b1a3ea34bc883887e03731f0770ba9493f397c8[m
+Author: Faizy426890 <faizanlahori2003@gmail.com>
+Date:   Sat Sep 13 19:49:09 2025 -0500
+
+     changes
+
+[33mcommit b0b92c4e24ab1f20bab1d6d46edec97514a8c2a9[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sun Sep 14 03:32:03 2025 +0500
+
+    changes
+
+[33mcommit 6d2e9352d1f2fe7f1b2037ae1b0f037b47d041d0[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Thu Sep 11 23:27:59 2025 +0500
+
+    msg status
+
+[33mcommit 7624e13507afb695486673297fd0440afbd09750[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 10 22:15:32 2025 +0500
+
+    inbox bug solves
+
+[33mcommit 99bc8f2e593301488289c42e105520e7be6a9a51[m
+Merge: 426e580 bca18ab
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Wed Sep 3 16:50:24 2025 +0500
+
+    Merge pull request #10 from Adroit-Tech/order_confirmation
+    
+    changes in feedback
+
+[33mcommit bca18ab1e0333d44d28cd2d2d6fa88733e6b4447[m[33m ([m[1;31morigin/order_confirmation[m[33m)[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 3 16:47:46 2025 +0500
+
+    changes in feedback
+
+[33mcommit 426e580b453ab47c1c3546ad78000ea751cbeb90[m
+Merge: 110bf7c 01d3ca8
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Wed Sep 3 11:47:23 2025 +0500
+
+    Merge pull request #9 from Adroit-Tech/order_confirmation
+    
+    addd inbox in menu
+
+[33mcommit 01d3ca8f70617719c592dd6aafb3d362cd4ccb15[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 3 11:46:35 2025 +0500
+
+    addd inbox in menu
+
+[33mcommit 110bf7c838cdc4da48016ac2e47c3e56f4cad048[m
+Merge: 40c0406 ee8e403
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Wed Sep 3 03:07:26 2025 +0500
+
+    Merge pull request #8 from Adroit-Tech/order_confirmation
+    
+    Order confirmation
+
+[33mcommit ee8e4035020bf9bdab3866999320762dc16a63ef[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 3 03:06:56 2025 +0500
+
+    changes url
+
+[33mcommit 8521fb716464c972385fc5d9e61f7851a15ba82a[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Sep 3 03:05:51 2025 +0500
+
+    changes
+
+[33mcommit 40c04063b0b31d6ddcdc29144eb9669beed235c4[m
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Sun Aug 31 16:09:15 2025 +0500
+
+    Update vars.ts
+
+[33mcommit ec7de44212de1f3d3518b95b1bcc0a6139b8f882[m
+Merge: 1db8b34 87b3aff
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Sun Aug 31 16:08:27 2025 +0500
+
+    Merge pull request #7 from Adroit-Tech/order_confirmation
+    
+    Order confirmation
+
+[33mcommit 87b3affb1e453299f3931370920e9ab3b09a2659[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sun Aug 31 15:53:28 2025 +0500
+
+    Done
+
+[33mcommit d75163081df378b8fe9b2f277462f34df75bc615[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 30 20:59:09 2025 +0500
+
+    adding payment method
+
+[33mcommit 1db8b349da978f5737c91f6954591a83c241764e[m
+Merge: 1a5a564 706367f
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Sun Aug 17 15:57:26 2025 +0500
+
+    Merge pull request #6 from Adroit-Tech/inbox
+    
+    Inbox
+
+[33mcommit 706367f8d31f9d67728228a0cee0de1b2b5f71ed[m[33m ([m[1;31morigin/inbox[m[33m)[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sun Aug 17 15:46:31 2025 +0500
+
+    inbox
+
+[33mcommit 8874781fafdb08da3beda2878f0982cc1a683b56[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sun Aug 17 15:07:14 2025 +0500
+
+    inbox
+
+[33mcommit 5deb1b82b1e62392f19ba857d456de4f1fb6cbab[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sun Aug 17 02:31:50 2025 +0500
+
+    inbox apis integrated
+
+[33mcommit 4a2dc684407d5b79c0b16d054d15b309ab4f995f[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 16 19:16:56 2025 +0500
+
+    inbox ui improvements pagiantion/search for customers v2
+
+[33mcommit bdb83ddc440e217db6a678221819b6b48c661aa7[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 16 18:17:24 2025 +0500
+
+    inbox ui improvements v1
+
+[33mcommit 369f8582300bb19a2bfe735f1b53f7407abda3e1[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 16 17:57:37 2025 +0500
+
+    inbox ui
+
+[33mcommit 1a5a564dfea311e74e9e4a9e5911ed91565507f8[m
+Merge: 2dde0ef c3a6ec6
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Sat Aug 16 14:37:47 2025 +0500
+
+    Merge pull request #5 from Adroit-Tech/invoice_pdf
+    
+    edit business
+
+[33mcommit c3a6ec6b68568fee448f1fdcd060d9da4119f000[m[33m ([m[1;31morigin/invoice_pdf[m[33m)[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 16 14:36:29 2025 +0500
+
+    edit business
+
+[33mcommit 2dde0ef14a268a78e95c025a40b6250d045024dc[m
+Merge: 01781f3 76a9868
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Sat Aug 16 13:51:07 2025 +0500
+
+    Merge pull request #4 from Adroit-Tech/invoice_pdf
+    
+    edit logo option
+
+[33mcommit 76a98689764354cd176f7193121492baaf7053b8[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Sat Aug 16 13:49:32 2025 +0500
+
+    edit logo option
+
+[33mcommit 01781f336ea8eaf79d6c759dc5e95b6df11533cc[m
+Merge: 480aa26 822c2c7
+Author: ZAINY <134195524+ZainyShorts@users.noreply.github.com>
+Date:   Thu Aug 7 13:17:24 2025 +0500
+
+    Merge pull request #3 from Adroit-Tech/feedback
+    
+    Feedback
+
+[33mcommit 822c2c7ebe1f40a6c4c52752eb6f5f6aa6825674[m[33m ([m[1;31morigin/feedback[m[33m)[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Thu Aug 7 13:16:27 2025 +0500
+
+    publishing feedback and newsletter ui
+
+[33mcommit c5eb5e181e7f7d7bcde98ef575bb8acd04187411[m
+Author: “Zainy <“zainyshorts@gmail.com”>
+Date:   Wed Aug 6 23:29:15 2025 +0500
+
+    feedback done 100%
+
+[33mcommit 5c01d22e24cc6f7f5f65929801af60f41178a3b3[m
+Auth

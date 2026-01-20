@@ -1,0 +1,31 @@
+@media print {
+  /* Hide sidebar and topbar */
+  .ts-vertical-layout-navbar flex bs-full,
+  .ts-vertical-nav-root mui-oluqk0 {
+    display: none !important;
+  }
+
+  /* Optionally, you can adjust the layout of your print page */
+}
+.receiptContainer {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  color: black; */
+  /* new code added by chatgpt for receipt 80mm */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80mm; /* Fixed width */
+  max-width: 80mm;
+  font-family: monospace; /* Ensures even character spacing */
+  font-size: 12px; /* Adjust for readability */
+  line-height: 1.2; /* Space between lines */
+  word-wrap: break-word;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+}
