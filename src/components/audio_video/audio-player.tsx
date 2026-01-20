@@ -106,11 +106,17 @@ export const AudioPlayer = ({ src }: { src: string }) => {
   // Detect mobile device
   useEffect(() => {
     const checkMobile = () => {
-      const userAgent = navigator.userAgent || navigator.vendor
-      const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream
-      const isAndroid = /android/i.test(userAgent)
-      setIsMobile(isIOS || isAndroid)
-    }
+  const userAgent = navigator.userAgent || navigator.vendor
+
+  const isIOS =
+    /iPad|iPhone|iPod/.test(userAgent) &&
+    !('MSStream' in window)
+
+  const isAndroid = /android/i.test(userAgent)
+
+  setIsMobile(isIOS || isAndroid)
+}
+
     checkMobile()
     window.addEventListener('resize', checkMobile)
     return () => window.removeEventListener('resize', checkMobile)
