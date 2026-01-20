@@ -1,7 +1,7 @@
 export function getBaseUrl(): string {
   // const baseUrl = 'https://kosmosbackend.themaskchat.com/api/'
   // const baseUrl = 'http://127.0.0.1:8000/api/' 
-  const baseUrl = 'http://192.168.18.55:8000/api/' 
+  const baseUrl = 'https://c43112b0b72e.ngrok-free.app/api/' 
   // const baseUrl = 'https://l8wlljm3-8000.inc1.devtunnels.ms/api/'
   return baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
 }
@@ -20,7 +20,7 @@ export function iframeURL(): string{
 }
 
 export function getBaseUrlForOAuth(): string {
-  const baseUrl = 'https://kosmosbackend.themaskchat.com/api/'
+  const baseUrl = 'https://kosmosbackend.themaskchat.co/api/'
   // const baseUrl = 'https://l8wlljm3-8000.inc1.devtunnels.ms/api/'
   return baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`
 }
